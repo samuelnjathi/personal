@@ -4,14 +4,7 @@
 html {
     font-family: "Cabin", serif;
 }
-header {
-    display: flex;
-    background-color: #000000;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 .aboutImg {
     height: 60vh;
     border-radius: 50%;

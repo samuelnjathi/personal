@@ -1,0 +1,39 @@
+.card {
+    position: relative;
+    background-color: #f1f1f1;
+    border: 1px solid #eb5f14;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-img img {
+    height: 100%;
+    object-fit: cover;    
+}
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+.card-text h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+.card-text p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: minion-pro, serif;
+}
+.card:hover .card-img img {
+    opacity: 0.3;
+}
+.card:hover .card-text {
+    opacity: 1;
+}

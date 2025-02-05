@@ -4,8 +4,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Heading from "../components/Heading";
-import Footer from "../components/Footer";
 import Title from "../components/Title";
 import Button from "../components/Button/Button";
 import { Link } from "react-router-dom";
@@ -14,7 +12,6 @@ import { Link } from "react-router-dom";
 export default function Contact() {
     return (
         <>
-            <Heading />
             <Title name="Contact Me" />
             <div className="grid-container">
                 <div className="grid-item form">
@@ -34,28 +31,27 @@ export default function Contact() {
                 </div>
                 <div className="grid-item contact">
                     <div className="contactIcon">
-                        <XIcon className="icon" style={{ fontSize: 30 }} />
+                        <XIcon className="icon" sx={{ fontSize: 30 }} />
                         <Link>sammy_tush_ </Link >
                     </div>
                     <div className="contactIcon">
-                        <InstagramIcon className="icon"  style={{ fontSize: 30}} />
+                        <InstagramIcon className="icon"  sx={{ fontSize: 30}} />
                         <Link>sammy_tush_ </Link >
                     </div>
                     <div className="contactIcon">
-                        <FacebookIcon  className="icon"  style={{ fontSize: 30 }} />
+                        <FacebookIcon  className="icon"  sx={{ fontSize: 30 }} />
                         <Link>Samuel Njathi</Link >
                     </div>
                     <div className="contactIcon">
-                        <LinkedInIcon className="icon"  style={{ fontSize: 30 }} />
+                        <LinkedInIcon className="icon"  sx={{ fontSize: 30 }} />
                         <Link>Samuel Njathi</Link >
                     </div>
                     <div className="contactIcon">
-                        <GitHubIcon className="icon"  style={{ fontSize: 30 }} />
-                        <Link>samuelnjathi</Link >
+                        <GitHubIcon className="icon" sx={{ fontSize: 30 }}  />
+                        <Link to="https://github.com/samuelnjathi">samuelnjathi</Link >
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

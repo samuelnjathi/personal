@@ -1,9 +1,8 @@
 import React from "react";
+import "../styles/BookCard.css";
 
-export default function Card(props) {
+export default function BookCard(props) {
     return (
-        <div className="container">
-            <div className="row">
                 <div className="card">
                     <div className="card-img">
                         <img src={props.img} alt={props.alt} />
@@ -15,8 +14,5 @@ export default function Card(props) {
                         {props.button2}
                     </div>
                 </div>
-            </div>
-        </div>
-        
     );
 }

@@ -1,12 +1,10 @@
 import React from "react";
-import Heading from "../components/Heading";
-import Footer from "../components/Footer";
 import Title from "../components/Title";
 
 export default function About() {
     return (
         <>
-            <Heading />
+        
             <Title name="About Me" />
             <div className="grid-container">
                 <div className="grid-item">
@@ -47,7 +45,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <Footer />
+           
         </>
     )
 }
